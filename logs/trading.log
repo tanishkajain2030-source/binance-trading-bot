@@ -1,0 +1,8 @@
+2026-05-20 15:13:30,883 - ERROR - APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2026-05-20 15:25:25,623 - INFO - BUY MARKET order placed for BTCUSDT
+2026-05-20 15:36:17,521 - ERROR - APIError(code=-4024): Limit price can't be lower than 73672.5.
+2026-05-20 15:37:17,910 - INFO - SELL LIMIT order placed for BTCUSDT
+2026-05-20 15:40:31,477 - ERROR - Side must be BUY or SELL
+2026-05-20 15:52:45,955 - INFO - BUY MARKET order placed for BTCUSDT
+2026-05-20 15:53:00,474 - INFO - SELL LIMIT order placed for BTCUSDT
+2026-05-20 15:55:16,191 - INFO - SELL LIMIT order placed for BTCUSDT
