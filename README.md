@@ -2,6 +2,7 @@
 
 A Python-based CLI trading bot for Binance Futures Testnet (USDT-M) that supports MARKET and LIMIT order placement with validation, logging, and error handling.
 
+---
 
 # Features
 
@@ -9,11 +10,12 @@ A Python-based CLI trading bot for Binance Futures Testnet (USDT-M) that support
 - Place LIMIT orders  
 - Supports BUY and SELL operations  
 - Command Line Interface (CLI) support  
-- Input validation  
-- Structured project architecture  
-- Logging system for API activity and errors  
+- Input validation
+- Structured project architecture
+- Logging system for API activity and errors
 - Exception handling for invalid inputs and API failures  
 
+---
 
 # Tech Stack
 
@@ -23,6 +25,7 @@ A Python-based CLI trading bot for Binance Futures Testnet (USDT-M) that support
 - argparse
 - logging
 
+---
 
 # Project Structure
 
@@ -46,6 +49,7 @@ trading_bot/
 └── .env
 ```
 
+---
 
 # Installation
 
@@ -56,6 +60,7 @@ git clone <your-github-repo-link>
 cd trading_bot
 ```
 
+---
 
 ## 2. Create Virtual Environment
 
@@ -73,6 +78,7 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
+---
 
 ## 3. Install Dependencies
 
@@ -80,6 +86,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+---
 
 # Binance Futures Testnet Setup
 
@@ -100,6 +107,7 @@ Testnet URL used:
 https://testnet.binancefuture.com
 ```
 
+---
 
 # Usage
 
@@ -109,6 +117,7 @@ https://testnet.binancefuture.com
 python -m bot.cli --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
 ```
 
+---
 
 ## LIMIT Order
 
@@ -116,6 +125,7 @@ python -m bot.cli --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
 python -m bot.cli --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price 80000
 ```
 
+---
 
 # Input Parameters
 
@@ -127,6 +137,7 @@ python -m bot.cli --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --p
 | `--quantity` | Order quantity | 0.001 |
 | `--price` | Required for LIMIT orders | 80000 |
 
+---
 
 # Logging
 
@@ -142,6 +153,7 @@ Logs include:
 - validation errors
 - exceptions
 
+---
 
 # Validation & Error Handling
 
@@ -156,19 +168,11 @@ Handled exceptions include:
 - Binance API errors
 - network failures
 
+---
 
 # Example Output
 
 ```text
-========== ORDER SUMMARY ==========
-
-Symbol: BTCUSDT
-Side: BUY
-Order Type: MARKET
-Quantity: 0.001
-
-===================================
-
 Order Placed Successfully
 
 Order ID: 123456
@@ -176,6 +180,26 @@ Status: FILLED
 Executed Quantity: 0.001
 ```
 
+---
+
+# Sample Logs
+
+```text
+2026-05-20 10:20:00 - INFO - BUY MARKET order placed for BTCUSDT
+2026-05-20 10:25:00 - INFO - SELL LIMIT order placed for BTCUSDT
+```
+
+---
+
+# Future Improvements
+
+- Web dashboard integration
+- Real-time market data streaming
+- Automated trading strategies
+- Risk management system
+- Database integration
+
+---
 
 # Requirements
 
@@ -191,13 +215,13 @@ Install them using:
 pip install -r requirements.txt
 ```
 
+---
 
-# Notes
+# Disclaimer
 
-- This project uses Binance Futures Testnet only
-- No real funds are used
-- Built for educational and evaluation purposes
+This project is developed for educational and evaluation purposes only and uses Binance Futures Testnet instead of real trading funds.
 
+---
 
 # Author
 
